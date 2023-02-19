@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.corno{
+  font-size: xx-large;
+  font-weight: 900;
+}
+
 :root {
   --header-height: 4.5rem;
 
