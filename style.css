@@ -31,6 +31,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--base-color-second);
   font: 400 1rem var(--body-font);
@@ -40,10 +44,14 @@ body{
 
 
 header {
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
+  display: flex;
   padding: 10px;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #e4e4e4;
   background-color: var(--body-color);
   align-items: center;
@@ -51,13 +59,11 @@ header {
   
 }
 
-header.container{
+/* header.container{
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
-}
-
-
+} */
 
 nav{
   display: flex;
@@ -67,8 +73,40 @@ nav{
   width: 100%;
 }
 
+.container{
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav.icon-close{
+  visibility: hidden;
+  opacity: 0;
+  top: -1.5rem;
+  transition: 0.3s;
+
+  position: absolute;
+  right: 1.5rem;
+}
+
+nav.show div.icon-close {
+  visibility: visible;
+  top: 1.5rem;
+  opacity: 1;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
 nav ul{
-  display: flex;
   list-style: none;
 }
 
@@ -96,13 +134,24 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+nav ul.grid {
+  gap: 4rem;
+}
+
+nav ul{
+  display: flex;
+  place-content: center;
+  gap: 2rem;
+}
+
+
+.grid {
+  gap: 2rem;
+}
+
 .title{
   text-decoration: none;
   color: var(--text-color);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 #logosite {
@@ -114,6 +163,7 @@ main {
   max-width: 1000px;
   padding: 20px;
   margin: auto;
+  margin-top: var(--header-height);
   margin-bottom: 30px;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 41%);
   border-radius: 0px 0px 10px 10px;
