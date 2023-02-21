@@ -86,11 +86,6 @@ nav a:hover{
   color: var(--base-color-second);
 }
 
-nav #i{
-  background-color: var(--base-color-alt);
-  color: var(--base-color-second);
-}
-
 /* nav{
   background-color: var(--body-color);
   padding: 10px;
