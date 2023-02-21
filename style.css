@@ -189,6 +189,10 @@ main {
     text-align: left;
   }
 
+  .button:hover{
+    background: var(--base-color-alt);
+  }
+
   .divider {
     margin: 0.5rem;
     height:1px;
@@ -201,13 +205,14 @@ main {
 footer {
   background: var(--base-color);
   color: var(--body-color);
-  padding: 1rem ; 
+  padding: 0.5rem ; 
   display: flex;
   align-items: center;
+  
 }
 
 footer .logosite {
-  height: 4vw;
+  height: 3vw;
   display: inline-block;
 }
 
