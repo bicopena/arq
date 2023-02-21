@@ -181,12 +181,12 @@ main {
     display: inline-flex;
     height: 3.5rem;
     align-items: center;
-    text-align: center;
     padding: 0 2rem;
     font: 500 1rem 'Dm Sans', sans-serif;
     text-decoration: none;
     font-size: x-large;
     margin: 0.5rem;
+    text-align: left;
   }
 
   .divider {
