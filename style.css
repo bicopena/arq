@@ -146,6 +146,11 @@ nav ul li a:hover::after {
   
 }
 
+h1{
+  margin: 0.5rem;
+  color: black;
+}
+
 h2{
   margin: 0.5rem;
   color: var(--base-color-alt);
