@@ -15,7 +15,7 @@
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(white);
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
   --text-color-light: hsl(0 0% 98%);
   --body-color: rgb(10, 10, 10);
   
@@ -167,6 +167,10 @@ main {
   background-color: white;
   display: grid;
   align-content: start;
+}
+
+ul {
+  list-style-position: inside;
 }
 
 
